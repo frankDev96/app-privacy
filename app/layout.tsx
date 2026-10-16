@@ -9,10 +9,10 @@ const geistSans = Geist({
 
 export const metadata: Metadata = {
   title: {
-    default: "App Privacy",
-    template: "%s · App Privacy",
+    default: "PlaystackInteractive",
+    template: "%s · PlaystackInteractive",
   },
-  description: "Privacy policies for the apps published from this account.",
+  description: "Apps published by PlaystackInteractive.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
