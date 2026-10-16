@@ -42,7 +42,16 @@ export default async function PrivacyPage({
   }
 
   return (
-    <PolicyDocument app={app}>
+    <PolicyDocument
+      app={app}
+      theme={
+        slug === "hydrofit"
+          ? "hydrofit"
+          : slug === "helpescapearrow"
+            ? "arrow"
+            : undefined
+      }
+    >
       <Policy />
     </PolicyDocument>
   );
