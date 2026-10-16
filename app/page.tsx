@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { apps } from "@/content/apps";
+import { publicPath } from "@/lib/public-path";
 
 const cards: Record<string, string> = {
   hydrofit:
@@ -24,7 +25,7 @@ export default function Home() {
               className={`flex items-center gap-4 rounded-2xl px-4 py-4 ${cards[app.slug] ?? "bg-white text-zinc-950"}`}
             >
               <img
-                src={app.icon}
+                src={publicPath(app.icon)}
                 alt=""
                 className="size-16 shrink-0 rounded-2xl bg-white object-cover"
               />
