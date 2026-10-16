@@ -2,6 +2,7 @@
   "name": "app-privacy",
   "version": "0.1.0",
   "private": true,
+  "description": "Static privacy policies for published apps.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
