@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { HelpEscapeArrowTesting } from "@/components/help-escape-arrow-testing";
 import { HydrofitBeta } from "@/components/hydrofit-beta";
 import { apps, getApp } from "@/content/apps";
+import { publicPath } from "@/lib/public-path";
 
 const details = {
   hydrofit: HydrofitBeta,
@@ -72,7 +73,7 @@ export default async function AppDetailsPage({
       </header>
       <div className="mx-auto flex w-full max-w-2xl items-center gap-4 px-6 pt-8 mb-4">
         <img
-          src={app.icon}
+          src={publicPath(app.icon)}
           alt=""
           className="size-16 shrink-0 rounded-2xl bg-white object-cover shadow-sm"
         />
