@@ -1,0 +1,11 @@
+---
+description: Privacy page rules for every prompt in this project
+alwaysApply: true
+---
+
+# Privacy pages
+
+- no links inside privacy page
+- follow styles and format of current implementation while adding new privacy page for new app
+
+When adding a privacy page, register the app in `content/apps.ts`, add its policy in `content/policies.tsx` with `PolicySection`, and keep the existing `app/[slug]/privacy` page. Do not add anchors in the privacy page or its header. Name outside documents in plain text.

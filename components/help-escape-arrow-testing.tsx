@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 const steps = [
   {
     step: "1",
@@ -114,15 +112,7 @@ export function HelpEscapeArrowTesting() {
                     {step.step}
                   </span>
                   <span>
-                    <Link
-                      href={step.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      prefetch={false}
-                      className="font-semibold underline decoration-white/80 underline-offset-4"
-                    >
-                      {step.title}
-                    </Link>
+                    <span className="block font-semibold">{step.title}</span>
                     <span className="mt-0.5 block text-sm text-white/90">
                       {step.detail}
                     </span>
@@ -131,17 +121,8 @@ export function HelpEscapeArrowTesting() {
               ))}
             </ol>
             <p className="mt-3 text-sm leading-6 text-zinc-600">
-              On Android, opt in from the Play listing:{" "}
-              <Link
-                href="https://play.google.com/store/apps/details?id=com.helpescapearrow"
-                target="_blank"
-                rel="noopener noreferrer"
-                prefetch={false}
-                className="font-medium text-[#0891b2] underline decoration-cyan-300 underline-offset-4"
-              >
-                com.helpescapearrow
-              </Link>
-              . Playing a few levels every couple of days, and sharing feedback,
+              On Android, opt in from the Play listing for com.helpescapearrow.
+              Playing a few levels every couple of days, and sharing feedback,
               helps a lot.
             </p>
           </div>

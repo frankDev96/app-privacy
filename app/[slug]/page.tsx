@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { notFound } from "next/navigation";
 import { HelpEscapeArrowTesting } from "@/components/help-escape-arrow-testing";
 import { HydrofitBeta } from "@/components/hydrofit-beta";
@@ -58,18 +57,8 @@ export default async function AppDetailsPage({
   return (
     <div className={pageBackground[slug]}>
       <header className="mx-auto flex w-full max-w-2xl items-center justify-between gap-4 px-6 pt-14">
-        <Link
-          href="/"
-          className="text-sm font-medium text-zinc-500 underline decoration-zinc-400 underline-offset-4 hover:text-zinc-950"
-        >
-          PlaystackInteractive
-        </Link>
-        <Link
-          href={`/${app.slug}/privacy`}
-          className="inline-flex shrink-0 rounded-full bg-zinc-950 px-4 py-2 text-sm font-semibold text-white underline decoration-white underline-offset-4"
-        >
-          View privacy policy
-        </Link>
+        <p className="text-sm font-medium text-zinc-500">PlaystackInteractive</p>
+        <p className="text-sm font-medium text-zinc-500">Privacy policy</p>
       </header>
       <div className="mx-auto flex w-full max-w-2xl items-center gap-4 px-6 pt-8 mb-4">
         <img

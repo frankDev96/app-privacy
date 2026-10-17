@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 const steps = [
   {
     step: "1",
@@ -87,15 +85,7 @@ export function HydrofitBeta() {
                     {step.step}
                   </span>
                   <span>
-                    <Link
-                      href={step.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      prefetch={false}
-                      className="font-semibold underline decoration-white/80 underline-offset-4"
-                    >
-                      {step.title}
-                    </Link>
+                    <span className="block font-semibold">{step.title}</span>
                     <span className="mt-0.5 block text-sm text-white/85">
                       {step.detail}
                     </span>

@@ -1,8 +1,5 @@
 import type { ComponentType } from "react";
-import {
-  ExternalLink,
-  PolicySection,
-} from "@/components/policy-document";
+import { PolicySection } from "@/components/policy-document";
 
 export function HydrofitPolicy() {
   return (
@@ -41,11 +38,9 @@ export function HydrofitPolicy() {
       <PolicySection title="Advertising">
         <p>
           When HydroFit shows ads, they are Google AdMob banners and occasional
-          full-screen ads. Google may process device identifiers under{" "}
-          <ExternalLink href="https://policies.google.com/privacy">
-            Google&apos;s Privacy Policy
-          </ExternalLink>
-          . HydroFit does not intentionally send hydration logs or biometrics
+          full-screen ads. Google may process device identifiers under
+          Google&apos;s Privacy Policy. HydroFit does not intentionally send
+          hydration logs or biometrics
           to AdMob. Where ads are shown, you can review consent in Settings
           under Ads & privacy.
         </p>
@@ -146,27 +141,12 @@ export function HelpEscapeArrowPolicy() {
           about how you interact with ads. They use this to deliver, measure,
           and limit ads.
         </p>
-        <p>Google describes that processing here:</p>
-        <ul className="list-disc space-y-1 pl-5">
-          <li>
-            <ExternalLink href="https://policies.google.com/privacy">
-              Google Privacy Policy
-            </ExternalLink>
-          </li>
-          <li>
-            <ExternalLink href="https://policies.google.com/technologies/partner-sites">
-              How Google uses information from sites or apps that use its
-              services
-            </ExternalLink>
-          </li>
-        </ul>
         <p>
-          You can review ad personalization at{" "}
-          <ExternalLink href="https://adssettings.google.com">
-            Google Ads Settings
-          </ExternalLink>
-          . On Android you can also reset or delete your advertising ID in the
-          device settings.
+          Google describes that processing in the Google Privacy Policy and in
+          how Google uses information from sites or apps that use its services.
+          You can review ad personalization in Google Ads Settings. On Android
+          you can also reset or delete your advertising ID in the device
+          settings.
         </p>
       </PolicySection>
 
