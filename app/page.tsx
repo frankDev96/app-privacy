@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { apps } from "@/content/apps";
 import { publicPath } from "@/lib/public-path";
 
@@ -30,12 +29,7 @@ export default function Home() {
                 className="size-16 shrink-0 rounded-2xl bg-white object-cover"
               />
               <span>
-                <Link
-                  href={`/${app.slug}`}
-                  className="text-lg font-medium underline decoration-current underline-offset-4"
-                >
-                  {app.name}
-                </Link>
+                <span className="block text-lg font-medium">{app.name}</span>
                 <span className="mt-1 block text-sm opacity-90">
                   {app.summary}
                 </span>

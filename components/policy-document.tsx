@@ -1,4 +1,3 @@
-import Link from "next/link";
 import type { ReactNode } from "react";
 import type { PrivacyApp } from "@/content/apps";
 
@@ -28,21 +27,11 @@ export function PolicyDocument({
 
   return (
     <main className="mx-auto w-full max-w-2xl px-6 py-14">
-      <p className="text-sm font-medium text-zinc-500">
-        <Link
-          href="/"
-          className="underline decoration-zinc-400 underline-offset-4 hover:text-zinc-950"
-        >
-          PlaystackInteractive
-        </Link>
-      </p>
-      <p className="mt-6">
-        <Link
-          href={`/${app.slug}`}
-          className={`text-sm font-medium tracking-wide underline decoration-current underline-offset-4 ${tone?.name ?? "text-zinc-500"}`}
-        >
-          {app.name}
-        </Link>
+      <p className="text-sm font-medium text-zinc-500">PlaystackInteractive</p>
+      <p
+        className={`mt-6 text-sm font-medium tracking-wide ${tone?.name ?? "text-zinc-500"}`}
+      >
+        {app.name}
       </p>
       <h1
         className={`mt-1 text-3xl font-semibold tracking-tight ${tone?.title ?? ""}`}
@@ -74,22 +63,3 @@ export function PolicySection({
   );
 }
 
-export function ExternalLink({
-  href,
-  children,
-}: {
-  href: string;
-  children: ReactNode;
-}) {
-  return (
-    <Link
-      href={href}
-      target="_blank"
-      rel="noopener noreferrer"
-      prefetch={false}
-      className="underline decoration-zinc-300 underline-offset-4 hover:decoration-zinc-800"
-    >
-      {children}
-    </Link>
-  );
-}
